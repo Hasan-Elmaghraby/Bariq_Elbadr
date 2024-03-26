@@ -1,0 +1,121 @@
+@import "header/dropdown";
+@import "header/login_buttons";
+@import "header/1_logo";
+@import "header/2_navbar";
+@import "header/toolbar_options";
+
+.main_header__ {
+  height: fit-content !important;
+  overflow: visible;
+}
+
+.fixed_header__ {
+  position: absolute;
+  width: 100%;
+  z-index: 111;
+  background-color: rgba($primaryColor, 0.16);
+  padding: 15px 0;
+  height: 80px;
+
+  @include xxs {
+    height: auto;
+    padding: 10px 0;
+  }
+
+  &.active_menu__,
+  &.not_active_menu__ {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 111;
+    transition: 0s;
+  }
+  &.fixed_menu {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 111;
+    transition: 0s;
+    background-color: $secondaryColor;
+  }
+
+  &.active_menu__ {
+    animation: active-menu 0.5s;
+    // box-shadow: 0 0 10px rgba(#000, 0.1);
+    padding: 15px !important;
+    height: fit-content;
+    background-color: $secondaryColor;
+  }
+
+  &.not_active_menu__ {
+    animation: not-active-menu 0.5s;
+    // transform: translateY(-100%);
+    top: -200px;
+  }
+}
+
+.header_content__ {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: $secondaryBorderRadius;
+}
+
+.input_search {
+  height: 45px;
+  border: 1px solid #fff;
+  background-color: transparent;
+  outline: none;
+  width: 396px;
+  font-size: 1.4rem;
+  color: #fff;
+  padding: 15px 13px;
+  transition: 0.5s;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+  caret-color: #fff;
+
+  @include md {
+    width: 280px;
+  }
+  @include dir {
+    @include md {
+      width: 250px;
+    }
+  }
+
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+
+  &::placeholder {
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: #fff;
+    opacity: 1;
+    transition: 0.5s;
+  }
+
+  &:focus {
+    &::placeholder {
+      opacity: 0;
+    }
+  }
+
+  &.magin_bottom {
+    margin-bottom: 10px;
+  }
+
+  @include sm {
+    width: 100%;
+  }
+}
+
+.section--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
+}

@@ -1,0 +1,134 @@
+.section_main_title__ {
+  font-size: 2.2rem;
+  font-weight: 700;
+  width: fit-content;
+  color: $headingMainColor;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 2px;
+
+  // @include xs {
+  //   font-size: 1.8rem;
+  // }
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset-inline-start: 0;
+    top: calc(100% + 3px);
+    opacity: 1;
+    @include circle(10px);
+    background-color: $secondaryColor;
+    transition: 0.5s;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset-inline-start: 0;
+    top: calc(100% + 8px);
+    opacity: 1;
+    width: 56px;
+    height: 2px;
+    background-color: $secondaryColor;
+    transition: 0.5s;
+  }
+
+  &.none_margin {
+    margin-bottom: 0;
+  }
+
+  &.small_margin_bottom__ {
+    margin-bottom: 16px;
+  }
+}
+
+.section_sub_title__ {
+  font-size: 1.8rem;
+  font-weight: 300;
+  color: $paragraphMainColor;
+  margin-top: 16px;
+  text-align: start;
+
+  @include xs {
+    font-size: 1.6rem;
+  }
+}
+
+.section_head_wrapper {
+  position: relative;
+  margin-bottom: 15px;
+
+  @include xs {
+    margin-bottom: 5px;
+  }
+
+  &.center {
+    .section_main_title__,
+    .section_sub_title__ {
+      text-align: center;
+      margin-inline-end: auto;
+      margin-inline-start: auto;
+    }
+  }
+
+  &.flex_display {
+    display: flex;
+    align-items: center;
+
+    &.justify_content_between {
+      justify-content: space-between;
+    }
+
+    @include xxs {
+      flex-direction: column;
+      row-gap: 30px;
+    }
+  }
+
+  &.white_color__ {
+    .section_main_title__,
+    .section_sub_title__ {
+      color: #fff;
+
+      // &::after,
+      // &::before {
+      //   background-color: #fff;
+      // }
+    }
+  }
+
+  &.small_size_dir_column {
+    @include sm {
+      gap: 20px;
+      flex-direction: column;
+    }
+  }
+
+  &.small_size_center__ {
+    @include sm {
+      .page_main_title__,
+      .page_sub_title__ {
+        text-align: center;
+        margin-inline-start: 0;
+        margin-inline-end: 0;
+      }
+    }
+  }
+
+  &.none_margin__ {
+    margin: 0 !important;
+  }
+
+  &.large_margin {
+    margin-bottom: 40px;
+  }
+}
+
+.title_icon_wrapper__ {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}

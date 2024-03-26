@@ -1,0 +1,68 @@
+.our_partner_cards_wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.our_partner_card {
+  display: block;
+  width: 100%;
+  max-width: 140px;
+  margin: 0 auto;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    transform: translateY(-50%);
+    inset-inline-end: -34%;
+    height: 161px;
+    width: 1px;
+    background-color: #dddddd;
+  }
+
+  .asp-om {
+    @include p-bottom(180, 140);
+    transition: 0.4s;
+  }
+
+  &:hover {
+    .asp-om {
+      transform: scale(1.1);
+    }
+  }
+
+  @include lg {
+    &:nth-child(5n)::before,
+    &:last-child::before {
+      display: none;
+    }
+  }
+
+  @include md_min {
+    &:nth-child(4n)::before,
+    &:last-child::before {
+      display: none;
+    }
+  }
+
+  @include sm_min {
+    &:nth-child(3n)::before,
+    &:last-child::before {
+      display: none;
+    }
+  }
+
+  @include xs_min {
+    &:nth-child(2n)::before,
+    &:last-child::before {
+      display: none;
+    }
+  }
+
+  @include xxs {
+    &::before {
+      display: none;
+    }
+  }
+}

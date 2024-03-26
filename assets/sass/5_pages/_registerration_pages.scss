@@ -1,0 +1,232 @@
+.registeration_page__ {
+  padding-top: 70px;
+  padding-bottom: 120px;
+  background-image: url('../images/shapes/registeration_page_background.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+
+  @include sm {
+    padding: 20px 0;
+  }
+}
+
+.shape__ {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  
+  &::after ,
+  &::before {
+    content: '';
+    position: absolute;
+    width: 977px;
+    border-radius: 60px;
+  }
+
+  &::after {
+    background-color: $primaryColor;
+    height: 352px;
+    bottom: 158px;
+    inset-inline-start: -940px;
+    transform: rotate(-8deg);
+  }
+
+  &::before {
+    background-color: $secondaryColor;
+    height: 21px;
+    inset-inline-start: -800px;
+    bottom: 0;
+  }
+
+  &.inset_inline_end_shape__ {
+    &::after {
+      inset-inline-start: unset;
+      inset-inline-end: -940px;
+      transform: rotate(8deg);
+    }
+    
+    &::before {
+      inset-inline-start: unset;
+      inset-inline-end: -800px;
+    }
+  }
+}
+
+.register_figure__ {
+  margin-bottom: 50px !important;
+}
+
+.form_label_for_info__ {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+
+  .head__,
+  .link__ {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: $headingSecondaryColor;
+    margin-bottom: 0;
+  }
+
+  .link__ {
+    color: $headingMainColor;
+    transition: 0.5s;
+    margin-inline-start: 10px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &.border_wrapper__ {
+    border: 1px solid $secondaryColor;
+    border-radius: $mainBorderRadius;
+    padding: 13px 10px;
+  }
+}
+
+.second_registration_title__{
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: $paragraphMainColor;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.form_label_for_info_group__ {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.code_shapes__ {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  direction: ltr;
+  position: relative;
+  width: 100%;
+  margin-bottom: 26px;
+  gap: 8px;
+
+  .code-input {
+    text-align: center;
+    width: 54px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    border: 1px solid $borderColor;
+    font-size: 3.3rem;
+    font-weight: 300;
+    color: $secondaryColor;
+    font-family: sans-serif;
+    outline: none;
+    background-color: transparent;
+    transition: 0.5s;
+
+    &.active {
+      background-color: $secondaryColor;
+      color: #fff;
+    }
+  }
+}
+
+.count_down_wrapper__ {
+  position: relative;
+  width: fit-content;
+  margin: 0 auto;
+
+  svg {
+    g {
+      stroke-dasharray: 140 350;
+      stroke-width: 3;
+      stroke-linecap:round;
+      stroke: #707070;
+      fill: #fff;
+      transition: 1s;
+
+    }
+  }
+
+  .text__ {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: $paragraphMainColor;
+  }
+}
+
+.registeration_title_wrapper__ {
+  margin-bottom: 45px;
+
+  @include sm {
+    margin-bottom: 25px;
+  }
+
+  @include xs {
+    margin-bottom: 15px;
+  }
+
+  &.center {
+    .registeration_title,
+    .registeration_sub_title {
+      text-align: center;
+      margin-inline-end: auto;
+      margin-inline-start: auto;
+    }
+  }
+
+  // #########################################
+  .registeration_title {
+    font-size: 2.3rem;
+    font-weight: 600;
+    width: fit-content;
+    color: $primaryColor;
+    margin-bottom: 30px;
+    
+    @include xs {
+      font-size: 1.8rem;
+    }
+  
+    &.none_margin {
+      margin-bottom: 0;
+    }
+  
+    &.small_margin_bottom__  {
+      margin-bottom: 15px;
+    }
+  }
+  
+  .registeration_sub_title {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: $paragraphSecondaryColor;
+    margin: 0;
+    
+    @include xs {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+.verification_mail_title__ {
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: $paragraphMainColor;
+  text-align: center;
+}

@@ -1,0 +1,38 @@
+.certificates_and_catalogs_card {
+  padding: 20px 16px 45px;
+  background-color: #fff;
+  flex-direction: column;
+
+  .figure__ {
+    width: 100%;
+    padding-bottom: 70.588%;
+    margin-bottom: 20px;
+    overflow: hidden;
+  }
+
+  .description_wrapper__ {
+    .title__ {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: $headingMainColor;
+      margin-bottom: 10px;
+      transition: 0.5s;
+    }
+
+    .parag__ {
+      font-size: 1.3rem;
+      font-weight: 400;
+      color: $paragraphSecondaryColor;
+    }
+  }
+
+  &:hover {
+    .img-om {
+      transform: scale(1.1);
+    }
+
+    .title__ {
+      color: $primaryColor;
+    }
+  }
+}

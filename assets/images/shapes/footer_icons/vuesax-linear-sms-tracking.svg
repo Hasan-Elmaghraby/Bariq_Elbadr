@@ -1,0 +1,9 @@
+<svg id="vuesax_linear_sms-tracking" data-name="vuesax/linear/sms-tracking" xmlns="http://www.w3.org/2000/svg" width="42.839" height="42.839" viewBox="0 0 42.839 42.839">
+  <g id="sms-tracking">
+    <path id="Vector" d="M0,8.925C0,2.677,3.57,0,8.925,0h17.85C32.13,0,35.7,2.677,35.7,8.925V21.42c0,6.247-3.57,8.925-8.925,8.925H8.925" transform="translate(3.57 6.247)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <path id="Vector-2" data-name="Vector" d="M17.85,0,12.263,4.462a5.651,5.651,0,0,1-6.694,0L0,0" transform="translate(12.495 16.065)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <path id="Vector-3" data-name="Vector" d="M0,0H10.71" transform="translate(3.57 29.452)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <path id="Vector-4" data-name="Vector" d="M0,0H5.355" transform="translate(3.57 22.312)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <path id="Vector-5" data-name="Vector" d="M0,0H42.839V42.839H0Z" fill="none" opacity="0"/>
+  </g>
+</svg>

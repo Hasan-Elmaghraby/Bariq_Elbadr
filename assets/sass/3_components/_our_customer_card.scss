@@ -1,0 +1,13 @@
+.our_customer_card {
+  display: block;
+  position: relative;
+  background-color: #fff;
+  transition: 0.5s;
+  margin: 0 auto;
+  width: 100%;
+  padding: 20px;
+
+  .figure__ {
+    @include p-bottom(97, 126);
+  }
+}

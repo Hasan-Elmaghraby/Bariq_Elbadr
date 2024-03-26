@@ -1,0 +1,62 @@
+.input__ {
+  height: 65px;
+  border: 1px solid rgba(#000, 0.17);
+  background-color: transparent;
+  border-radius: 100px;
+  outline: none;
+  width: 100%;
+  font-size: 1.4rem;
+  color: $headingMainColor;
+  padding: 20px 29px;
+  transition: 0.5s;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  caret-color: $primaryColor;
+
+  @include xxs {
+    height: 48px;
+    margin-bottom: 10px;
+  }
+
+  &:focus,
+  &:hover {
+    border-color: $primaryColor;
+  }
+
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+
+  &::placeholder {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #818181;
+    opacity: 1;
+    transition: 0.5s;
+  }
+
+  &:focus {
+    &::placeholder {
+      opacity: 0;
+    }
+  }
+
+  &.magin_bottom {
+    margin-bottom: 10px;
+  }
+
+  &.colored_white__ {
+    color: #fff;
+    border-color: #fff;
+
+    &::placeholder {
+      color: #fff;
+    }
+  }
+
+  &.check_product {
+    height: 45px;
+  }
+}

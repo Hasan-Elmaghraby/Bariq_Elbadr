@@ -1,0 +1,53 @@
+.accordion_wrapper__ {
+  .card {
+    margin-bottom: 20px;
+    border-radius: $mainBorderRadius !important;
+    border: none;
+  }
+
+  .card-header {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+
+    .btn-link {
+      padding: 20px;
+      text-decoration: none;
+      color: $headingMainColor;
+      border-radius: $mainBorderRadius;
+      background-color: $greyColor;
+      font-size: 16px;
+      height: 50px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+
+      &::after {
+        content: "";
+        width: 26px;
+        height: 26px;
+        display: block;
+        background-image: url(../images/common_questions/plus.svg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        transition: 0.5s;
+      }
+
+      &:not(.collapsed) {
+        background-color: $primaryColor;
+        color: #fff;
+
+        &::after {
+          background-image: url(../images/common_questions/negative.svg);
+        }
+      }
+    }
+  }
+
+  .card-body {
+    font-size: 16px;
+    color: $paragraphMainColor;
+  }
+}

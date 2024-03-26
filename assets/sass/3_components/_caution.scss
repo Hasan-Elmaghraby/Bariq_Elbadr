@@ -1,0 +1,48 @@
+.caution_page {
+  background-color: $secondaryColor;
+}
+
+.caution {
+  padding: 60px 0;
+  background-color: #fff;
+  margin: 0 auto;
+  text-align: center;
+  width: 781px;
+
+  @include sm {
+    width: 80%;
+  }
+  @include xxs {
+    width: 90%;
+  }
+
+  .figure__ {
+    width: fit-content;
+    margin: 0 auto;
+  }
+
+  .title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: $primaryColor;
+    margin: 15px 0;
+  }
+
+  .parg {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: $paragraphMainColor;
+    margin-bottom: 33px;
+  }
+
+  .result {
+    font-size: 1.4rem;
+    font-weight: 700;
+    background-color: $primaryColor;
+    color: #fff;
+    height: 53px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

@@ -1,0 +1,63 @@
+.main_card {
+  display: block;
+  position: relative;
+  padding: 15px 15px 30px;
+  border-radius: 20px;
+  background-color: #fff;
+  transition: 0.5s;
+  margin: 0 auto;
+  width: 100%;
+
+  @include xxs {
+    width: auto;
+  }
+
+  &:hover {
+    transform: translateY(-10px);
+  }
+
+  .figure__ {
+    transition: 0.4s;
+    @include p-bottom(193, 351);
+    border-radius: 20px;
+    overflow: hidden;
+  }
+
+  .title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: $headingMainColor;
+    margin-bottom: 8px;
+    margin-top: 15px;
+    text-align: start;
+
+    @include xs {
+      margin-bottom: 10px;
+      margin-top: 10px;
+    }
+  }
+  .parg {
+    font-size: 1.4rem;
+    color: $paragraphMainColor;
+    font-weight: 300;
+    margin-bottom: 15px;
+    text-align: start;
+  }
+
+  .read_more {
+    color: $secondaryColor;
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-align: start;
+  }
+
+  .icon__ {
+    display: inline-block;
+    margin-inline-start: 6px;
+    margin: 0;
+
+    @include dir {
+      transform: rotate(180deg);
+    }
+  }
+}

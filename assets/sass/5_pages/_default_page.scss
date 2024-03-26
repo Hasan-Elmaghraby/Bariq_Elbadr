@@ -1,0 +1,146 @@
+.default_page__ {
+  min-height: 50vh;
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  @include sm {
+    padding-top: 43px;
+    padding-bottom: 43px;
+  }
+
+  @include xs {
+    padding-top: 23px;
+    padding-bottom: 23px;
+  }
+}
+
+.default_section__ {
+  transition: 0.1s;
+  padding-bottom: 50px;
+  padding-top: 50px;
+
+  @include sm {
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }
+
+  @include xs {
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+}
+
+.section_tools_wrapper__ {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @include xxs {
+    flex-direction: column;
+    margin: 20px 0;
+  }
+}
+
+.row_modify {
+  display: flex;
+  justify-content: center;
+  @include md {
+    justify-content: center;
+  }
+
+  &.with_row_gap {
+    row-gap: 30px;
+
+    @include xs {
+      row-gap: 15px;
+    }
+  }
+
+  &.with_margin_bottom__ {
+    margin-bottom: 30px;
+  }
+
+  &.reverse_dir_column_small_size {
+    @include sm {
+      flex-direction: column-reverse;
+    }
+  }
+
+  &.justify_between__ {
+    justify-content: space-between;
+  }
+
+  &.items_center__ {
+    align-items: center;
+  }
+
+  &.items_start__ {
+    align-items: flex-start;
+  }
+
+  &.items_end__ {
+    align-items: flex-end;
+  }
+}
+
+.col_flex {
+  display: flex;
+}
+
+.section_block_title__ {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: $headingMainColor;
+  margin-bottom: 20px;
+}
+
+.default_subtitle_ {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 15px;
+  line-height: 30px;
+
+  @include dir {
+    line-height: 25px;
+  }
+}
+
+.default_parg {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: $headingMainColor;
+  margin-bottom: 7px;
+  line-height: 30px;
+  text-align: start;
+
+  &.with_figure {
+    color: $paragraphSecondaryColor;
+    margin-bottom: 4px;
+
+    &::before {
+      content: "";
+      display: inline-block;
+      border-radius: 50%;
+      width: 12px;
+      height: 12px;
+      margin-inline-end: 7px;
+      background-color: transparent;
+      border: 1px dashed $secondaryColor;
+    }
+  }
+
+  @include dir {
+    line-height: 25px;
+  }
+}
+
+.rotate_arrow_en {
+  @include dir {
+    transform: rotate(180deg);
+  }
+}
+
+.bg_section {
+  background-color: rgba(#000, 0.03);
+}

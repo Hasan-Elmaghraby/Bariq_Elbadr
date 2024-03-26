@@ -1,0 +1,24 @@
+.header_logo__ {
+  max-width: 116px;
+  display: block;
+  z-index: 1;
+  flex-basis: content;
+  margin-inline-end: 110px;
+
+  @include md {
+    margin-inline-end: 60px;
+  }
+
+  @include xxs {
+    max-width: 85px;
+  }
+
+  .figure__ {
+    width: 100%;
+  }
+
+  img {
+    width: 100%;
+    object-fit: contain;
+  }
+}
