@@ -167,6 +167,7 @@
     padding-inline-end: 0;
   }
 }
+
 .about_us_image_wrapper {
   position: relative;
   &::before,
@@ -216,7 +217,7 @@
     top: 0;
     left: 0;
 
-    @include xxs {
+    @include sm {
       border-radius: 0;
     }
   }
@@ -229,7 +230,7 @@
   &::after {
     position: absolute;
     content: "";
-    top: 70%;
+    top: 68%;
     inset-inline-end: 50%;
     transform: translateX(-50%);
     width: 4251px;
@@ -294,6 +295,10 @@
       inset-inline-end: 0;
       background-color: rgba($primaryColor, 0.11);
       border-bottom-left-radius: 220px;
+
+      @include dir {
+        border-bottom-right-radius: 220px;
+      }
     }
 
     .title {

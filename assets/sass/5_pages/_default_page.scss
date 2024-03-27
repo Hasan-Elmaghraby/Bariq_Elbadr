@@ -88,9 +88,10 @@
 }
 
 .section_block_title__ {
-  font-size: 1.6rem;
-  font-weight: 500;
+  font-size: 1.8rem;
+  font-weight: 700;
   color: $headingMainColor;
+  margin-top: 30px;
   margin-bottom: 20px;
 }
 
@@ -114,6 +115,9 @@
   line-height: 30px;
   text-align: start;
 
+  &.light_parg {
+    color: $paragraphMainColor;
+  }
   &.with_figure {
     color: $paragraphSecondaryColor;
     margin-bottom: 4px;

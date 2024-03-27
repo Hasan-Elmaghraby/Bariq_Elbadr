@@ -85,6 +85,14 @@
         filter: brightness(0) invert(1);
       }
     }
+
+    @include sm {
+      border: 1px solid #fff;
+      color: #fff;
+      .figure__ {
+        filter: brightness(0) invert(1);
+      }
+    }
   }
 
   &.second_bg {

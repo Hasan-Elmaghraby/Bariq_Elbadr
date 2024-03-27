@@ -103,12 +103,14 @@ function allSiteSwiperInit() {
     991: {
       slidesPerView: 5,
     },
+    1200: {
+      slidesPerView: 6,
+    },
   };
 
   const heroSection = {
-    autoplay: false,
+    autoplay: true,
     className: ".hero_sec__",
-    // breakpoints: homeOpinionSwiperBreakNormalPoints,
     observer: true,
     observeParents: true,
   };
@@ -227,26 +229,26 @@ function stickyHeader($) {
       $(".side_links_section").removeClass("active");
       $(".toolbar_options__ .download").removeClass("second_bg");
       $(".toolbar_options__ .lang_link__").removeClass("second_bg");
-      if ($(".fixed_header__").hasClass("fixed_menu")) {
-        $(".fixed_header__ .header_logo__ img").attr(
-          "src",
-          "assets/images/bariqFixed.png"
-        );
-      } else {
-        $(".fixed_header__ .header_logo__ img").attr(
-          "src",
-          "assets/images/fixed_logo.svg"
-        );
-      }
+      // if ($(".fixed_header__").hasClass("fixed_menu")) {
+      //   $(".fixed_header__ .header_logo__ img").attr(
+      //     "src",
+      //     "assets/images/bariqFixed.png"
+      //   );
+      // } else {
+      //   $(".fixed_header__ .header_logo__ img").attr(
+      //     "src",
+      //     "assets/images/fixed_logo.svg"
+      //   );
+      // }
     }
 
     // scroll down
     if (currentScroll < lastScroll && currentScroll > headerHeight + 500) {
       // add class avtive menu
-      $(".fixed_header__ .header_logo__ img").attr(
-        "src",
-        "assets/images/bariqFixed.png"
-      );
+      // $(".fixed_header__ .header_logo__ img").attr(
+      //   "src",
+      //   "assets/images/bariqFixed.png"
+      // );
       $(".toolbar_options__ .download").addClass("second_bg");
       $(".toolbar_options__ .lang_link__").addClass("second_bg");
       $(".fixed_header__").addClass("active_menu__");

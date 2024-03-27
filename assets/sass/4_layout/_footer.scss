@@ -13,6 +13,8 @@
   background-color: $primaryColor;
   padding-top: 55px;
   overflow: hidden;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
 }
 
 .footer_logo__ {
@@ -270,6 +272,8 @@
 
 .footer_social_wrapper {
   background-color: $secondaryColor;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
 }
 
 .footer_social_contact {

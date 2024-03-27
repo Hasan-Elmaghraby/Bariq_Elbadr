@@ -47,6 +47,10 @@
     padding: 15px !important;
     height: fit-content;
     background-color: $secondaryColor;
+
+    .header_logo__ {
+      filter: brightness(0) invert(1);
+    }
   }
 
   &.not_active_menu__ {
