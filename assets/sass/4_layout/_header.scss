@@ -7,6 +7,38 @@
 .main_header__ {
   height: fit-content !important;
   overflow: visible;
+
+  &.fixed_menu {
+    .fixed_header__ {
+      position: relative;
+      background-color: $secondaryColor;
+    }
+    .toolbar_options__ {
+      .figure__ {
+        filter: brightness(0) invert(1);
+      }
+
+      .lang_link__ {
+        &:hover {
+          .figure__ {
+            filter: none;
+          }
+        }
+      }
+      .main_link {
+        border-color: #fff;
+        color: #fff;
+
+        &:hover {
+          border-color: $primaryColor;
+          color: $primaryColor;
+          .figure__ {
+            filter: none;
+          }
+        }
+      }
+    }
+  }
 }
 
 .fixed_header__ {

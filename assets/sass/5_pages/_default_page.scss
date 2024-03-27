@@ -119,11 +119,14 @@
     color: $paragraphMainColor;
   }
   &.with_figure {
+    display: flex;
+    align-items: baseline;
     color: $paragraphSecondaryColor;
     margin-bottom: 4px;
 
     &::before {
       content: "";
+      flex-shrink: 0;
       display: inline-block;
       border-radius: 50%;
       width: 12px;
