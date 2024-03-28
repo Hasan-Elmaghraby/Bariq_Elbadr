@@ -7,10 +7,12 @@
 .main_header__ {
   height: fit-content !important;
   overflow: visible;
+  position: absolute;
+  width: 100%;
 
-  &.fixed_menu {
+  &.fixed_relative_header {
+    position: relative;
     .fixed_header__ {
-      position: relative;
       background-color: $secondaryColor;
     }
     .toolbar_options__ {
@@ -42,7 +44,7 @@
 }
 
 .fixed_header__ {
-  position: absolute;
+  position: relative;
   width: 100%;
   z-index: 111;
   background-color: rgba($primaryColor, 0.16);
