@@ -11,3 +11,33 @@
   font-size: 1.2rem;
   margin-top: 10px;
 }
+
+.fancy_video {
+  position: relative;
+
+  .figure__ {
+    &::before {
+      content: "";
+      @include overlay(#000, 0.5);
+      z-index: 1;
+    }
+
+    &::after {
+      position: absolute;
+      font-family: "Font Awesome 6 Free";
+      content: "\f144";
+      font-weight: 900;
+      font-size: 30px;
+      color: $primaryColor;
+      top: 50%;
+      inset-inline-end: 50%;
+      transform: translate(-50%, -50%);
+      @include circle(60px);
+      background-color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 3;
+    }
+  }
+}

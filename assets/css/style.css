@@ -1464,6 +1464,46 @@ html[dir=ltr] .site_link .icon__ {
   margin-top: 10px;
 }
 
+.fancy_video {
+  position: relative;
+}
+.fancy_video .figure__::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.fancy_video .figure__::after {
+  position: absolute;
+  font-family: "Font Awesome 6 Free";
+  content: "\f144";
+  font-weight: 900;
+  font-size: 30px;
+  color: #db9e3b;
+  top: 50%;
+  inset-inline-end: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 3;
+}
+
 .custom_dropdown__ {
   position: relative;
 }
@@ -4592,7 +4632,8 @@ html[dir=ltr] .rotate_arrow_en {
   position: relative;
 }
 .hero_sec__ .hero_figure {
-  padding-bottom: 41.6377515614%;
+  padding-bottom: 100svh;
+  min-height: 1vh;
   position: relative;
 }
 .hero_sec__ .hero_figure::after {

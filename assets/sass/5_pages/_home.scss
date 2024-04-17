@@ -2,7 +2,8 @@
   position: relative;
 
   .hero_figure {
-    @include p-bottom(600, 1441);
+    padding-bottom: 100svh;
+    min-height: 1vh;
     position: relative;
 
     &::after {
